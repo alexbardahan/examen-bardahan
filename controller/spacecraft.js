@@ -61,7 +61,7 @@ const searchSpacecraft = async (req, res) => {
              results= await Spacecraft.findAll({
                 where: {
                     speed: {
-                        [Op.gt]: `%${value}%`
+                        [Op.gt]: `${value}`
                     },
                 },
                 order: [
@@ -72,7 +72,7 @@ const searchSpacecraft = async (req, res) => {
             results = await Spacecraft.findAll({
                 where: {
                     mass: {
-                        [Op.gt]: `%${value}%`
+                        [Op.gt]: `${value}`
                     },
                 },
                 order: [

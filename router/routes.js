@@ -6,6 +6,7 @@ const {
     postSpacecraft,
     putSpacecraft,
     deleteSpacecraft,
+    searchSpacecraft,
 } = require('../controller/spacecraft')
 
 const {
@@ -20,6 +21,7 @@ router.get('/getSpacecraft', getSpacecraft);
 router.post('/postSpacecraft', postSpacecraft);
 router.put('/putSpacecraft/:id' , putSpacecraft);
 router.delete('/deleteSpacecraft/:id' , deleteSpacecraft);
+router.get('/searchSpacecraft', searchSpacecraft);
 
 //route pentru astronaut
 router.get('/getAstronaut', getAstronaut);
